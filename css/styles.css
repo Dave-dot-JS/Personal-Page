@@ -6,11 +6,13 @@
 	line-height: 1.5;
 }
 
+html {
+	background: #eee;
+}
+
 section {
 	overflow: hidden;
-	padding: 0 16em;
 	min-height: 100vh;
-	background: #eee;
 }
 
 section h2 {
@@ -22,7 +24,6 @@ section h2 {
 }
 
 footer {
-	float: right;
 	padding: 0.5em;
 }
 
@@ -36,11 +37,39 @@ footer {
 	width: 100%;
 	z-index: 10;
 	display: flex;
-	background-color: white;
 	font-size: 1.2em;
 	align-items: baseline;
 	border: 1px solid #E7E7E7;
 	background-color: #F8F8F8;
+	height: 3.5em;
+}
+
+.fa-bars {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	font-size: 1em;
+	color: #eee;
+	background: #333;
+}
+
+	.fa-bars:hover {
+		background: #111;
+	}
+
+	.fa-bars:active {
+		background: #666;
+		color: #333;
+	}
+
+.nav-bar > ul > a:hover,
+.nav-bar > ul > a:focus,
+.nav-bar > a:hover,
+.nav-bar > a:focus {
+	text-decoration: none;
+	color: #333;
 }
 
 .nav-bar ul {
@@ -52,14 +81,8 @@ footer {
 		color: #777;
 	}
 
-	.nav-bar a:hover,
-	.nav-bar a:focus {
-		text-decoration: none;
-		color: #333;
-	}
-
-	.nav-bar ul > a > li:hover,
-	.nav-bar ul > a > li:focus {
+	.nav-section:hover,
+	.nav-section:focus {
 		background-color: #e7e7e7;
 		color: #333;
 		transition: 0.3s linear;
@@ -67,7 +90,11 @@ footer {
 
 .nav-item {
 	display: inline-block;
-	padding: 0.6em;
+	padding: 0.65em;
+}
+
+.nav-section {
+	padding: 0.9em 0.8em;
 }
 
 #nav-title {
@@ -137,6 +164,11 @@ footer {
 
 /***********************ABOUT SECTION STYLES***********************/
 
+#About,
+#Contact {
+	padding: 0 16em;
+}
+
 #About p,
 #About li {
 	font-size: 1.25em;
@@ -154,7 +186,7 @@ footer {
 .portfolio-item {
 	overflow: hidden;
 	padding: 0 3em;
-	min-width: 30em;
+	min-width: 25em;
 	margin: 0.8em 0;
 	flex: 50% 0 1;
 	text-align: center;
@@ -243,15 +275,9 @@ div.overlay {
 
 /***********************CONTACT FORM STYLES***********************/
 
-#form-view {
-	width: 35em;
-	margin-top: 1.5em;
-}
-
 .contact-form input, 
 .contact-form text-area, 
 .contact-form button {
-	display: block;
 	margin: 0.8em 0;
 }
 
@@ -259,26 +285,35 @@ div.overlay {
 	width: 50%;
 }
 
-#submit-btn {
-	background-color: lightslategrey;
-	color: azure;
+	#submit-btn:hover {
+		background-color: #bbb;
+	}
+
+	#submit-btn:active,
+	#submit-btn:focus {
+		border-color: #333;
+	}
+
+
+/***********************TOGGLED STYLES***********************/
+.drop {
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
 }
 
-	#submit-btn:hover {
-		background-color: slategray;
-		border: 3px solid lightblue;
-	}
+.expand {
+	height: 11em !important;
+}
+
 
 /***********************RESPONSIVE STYLES***********************/
 
 /*Small Laptop*/
 @media screen and (max-width: 1000px) {
-	section {
+	#About,
+	#Contact {
 		padding: 0 8em;
-	}
-
-	#About {
-		padding: auto;
 	}
 }
 
@@ -312,26 +347,30 @@ div.overlay {
 
 /*Mobile*/
 @media screen and (max-width: 575px) {
-	section {
+	#About,
+	#Contact {
 		padding: 0.5em;
 	}
 
 		section h2 {
-			margin: 2em 0 0 0;
+			padding-top: 2em;
 			padding-left: 0;
 			padding-right: 0;
+			padding-bottom: 0.5em;
 		}
 
 	.nav-bar {
 		flex-direction: column;
 		align-items: center;
+		height: 3.1em;
 	}
 
 		.nav-bar > ul {
-			display: flex;
-			flex-direction: column;
-			padding-left: 0.5em;
-			align-items: center;
+			display: none
+	}
+
+	.fa-bars {
+		display: block;
 	}
 
 	.nav-item {
@@ -358,4 +397,12 @@ div.overlay {
 	#Contact {
 		padding: 0 1em;
 	}
+
+	.nav-section:hover,
+	.nav-section:focus {
+		background-color: inherit
+		color: #333;
+		transition: 0.3s linear;
+	}
+
 }
