@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Dave·JS</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Coda:400" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<!-- Page Navigation Bar -->
+			<nav class="nav-bar">
+				<a href="#Home" class="nav-item" id="nav-title">d·JS</a>
+				<i class="fa fa-bars" id="dropdown"></i>
+				<ul id="nav-items">
+					<a href="#About"><li class="nav-item nav-section">About</li></a>
+					<a href="#Portfolio"><li class="nav-item nav-section">Portfolio</li></a>
+					<a href="#Skills"><li class="nav-item nav-section">Skills</li></a>
+					<a href="#Contact"><li class="nav-item nav-section">Contact</li></a>
+				</ul>
+			</nav>
+			<!-- Avatar, Headings, and Socials -->
+			<nav class="nav-head" id="Home">
+				<h1>Dave Skrtich</h1>
+				<h2><em>Programmer  |  Machine-Learning Enthusiast  |  Drummer</em></h2>
+				<img src="images/Avatar.jpeg" alt="handsome duder" id="avatar">
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/dskrtich/" target="_blank"><img src="images/li-ico.png" alt="LinkedIn" class="socials" id="LI-social"></a>
+					<a href="https://github.com/Dave-dot-JS" target="_blank"><img src="images/github-ico.png" alt="GitHub" class="socials"  id="GH-social"></a>
+					<a href="https://twitter.com/Dave_dot_JS" target="_blank"><img src="images/twit-ico.png" alt="Twitter" class="socials"  id="Twit-social"></a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<section id="About">
+					<!-- Introduction and Personal Summary -->
+					<h2>About</h2>
+					<p>Hi. Welcome to the first iteration of my personal catch-all page! This is where you can find general information about me and the many things I do. But by way of introduction, I'm Dave·JS, and I am a guy that does a whole lot of stuff. Borderline too many stuffs. By day, I work as a Senior Actuarial Analyst, where I have over 5 years experience working with major P&C Insurers in the Toronto Area.  It's about as interesting as it sounds.</p><br />
+					<p>But by night, I am the drummer for Toronto music projects <a href="https://www.sixteenscandals.com" target="_blank">Sixteen Scandals</a> and <a href="https://www.thesunharmonic.com/" target="_blank">The Sun Harmonic</a>.  Fun stuff right? I've got a drumming vlog you can check out <a href="#" target="_blank">here</a>.</p><br />
+					<p>I am also passionate about programming.  Most recently, I have been finding ways to combine this passion with my background in statistics to break into the world of Machine learning.  Even with multiple courses and certificates already under my belt, I am a non-stop learner and am always looking for ways to apply my new-found skillset to new projects or tasks. In time, I hope to fully transition into a Data Scientist/Machine Learning Engineer role in downtown Toronto.</p><br />
+					<p> Thought one blog was enough? Think again! I also keep a personal blog tracking my journey into Machine Learning and programming in general (okay mostly machine learning) <a href="#" target="_blank">here</a>.</p><br />
+					<p>Oh, I also do some web development.  I made this site! It's not terrible!  I'm also pretty into tabletop wargames, RPGs, and martial arts.  You could say that my real hobby is collecting hobbies.</p>
+				</section>
+				<section id="Portfolio">
+					<h2>Portfolio</h2>
+					<div class="portfolio-container">
+					<!-- First portfolio item -->
+						<div class="portfolio-item">
+							<a href="https://github.com/Grixxs/Tic-Tac-Toe/" target="_blank">
+								<div class="overlay">
+									<img src="images/tictactoe.png" alt="screenshot of tic tac toe board" />
+									<p>Can you defeat yourself?</p>
+								</div>
+							</a>
+							<div class="portfolio-text">
+								<h3>Tic-Tac-Toe</h3>
+								<p><em>A two player tic-tac-toe game built using vanilla Javascript, HTML, and CSS.</em></p>
+							</div>
+						</div>
+						<!-- Second portfolio item -->
+						<div class="portfolio-item">
+							<a href="https://github.com/Grixxs/Signin-Form" target="_blank">
+								<div class="overlay">
+									<img src="images/signin page.png" alt="screenshot of project" />
+									<p>Welcome "user"!</p>
+								</div>
+							</a>
+							<div class="portfolio-text">
+								<h3>Sign-in Page</h3>
+								<p><em>A functional sign-in page able to register and sign users into the page using Javascript objects.</em></p>
+							</div>
+						</div>
+						<!-- Third portfolio item -->
+						<div class="portfolio-item">
+							<a href="https://github.com/Grixxs/Daves-Hot-Dice" target="_blank">
+								<div class="overlay">
+									<img src="images/dicegame.png" alt="screenshot of project" />
+									<p>Feelin' lucky, punk?</p>
+								</div>
+							</a>
+							<div class="portfolio-text">
+								<h3>Dave's Hot Dice</h3>
+								<p><em>The most fair casino game you will ever play. Make bets, roll dice, and manage your bankroll.</em></p>
+							</div>
+						</div>
+						<!-- Fourth portfolio item -->
+						<div class="portfolio-item">
+							<a href="https://codepen.io/grixs/full/MQxoza/" target="_blank">
+								<div class="overlay">
+									<img src="images/quote machine.png" />
+									<p>Get Demotivated!</p>
+								</div>
+							</a>
+							<div class="portfolio-text">
+								<h3>Quote Generator</h3>
+								<p><em>A Javascript application that can generate and tweet demotivational quotes at the click of a button.</em></p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="Skills">
+					<h2>Skills</h2>
+					<!-- Skills icons and text -->
+					<div id="skill-container">
+						<div class="skill-item">
+							<img src="images/html5.png" alt="HTML5 icon" class="skill-icon html-icon">
+							<ul class="skill-text">
+								<li>HTML5 structure</li>
+								<li>Single-page and multi-page layouts</li>
+								<li>WCAG 2.0 Compliance</li>
+							</ul>
+						</div>
+						<div class="skill-item">
+							<img src="images/css3.png" alt="CSS3 icon" class="skill-icon css-icon">
+							<ul class="skill-text">
+								<li>Animations and Keyframes</li>
+								<li>Flexbox</li>
+								<li>Responsive Design</li>
+								<li>Bootstrap/Materialize/Skeleton</li>
+							</ul>
+						</div>
+						<div class="skill-item">
+							<img src="images/javascript.png" alt="JavaScript icon" class="skill-icon js-icon">
+							<ul class="skill-text">
+								<li>ES6</li>
+								<li>jQuery</li>
+								<li>JSON and AJAX</li>
+								<li>Object-Oriented Programming</li>
+							</ul>
+						</div>
+						<div class="skill-item">
+							<img src="images/python.png" alt="Python icon" class="skill-icon python-icon">
+							<ul class="skill-text">
+								<li>Data analysis and Visualization</li>
+								<li>NumPy, SciPy, Pandas, and Matplotlib</li>
+								<li>TensorFlow and Sci-Kit Learn</li>
+								<li>Big data manipulation with PySpark</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="Contact">
+					<h2>Contact Form</h2>
+					<h4>Want to get in touch? Send me a message using the form below!</h4>
+					<div class="form-group">
+						<form class="contact-form" action="https://formspree.io/me@dave-dot-js.com" method="POST">
+							<input type="email" name="email" class="form-control" placeholder="Your email">
+							<textarea name="message" rows="10" class="form-control" placeholder="You message"></textarea>
+							<button type="submit" class="btn" id="submit-btn">Let's Talk!</button>
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			Coded from scratch by &copy; Dave·JS 2018
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
+
