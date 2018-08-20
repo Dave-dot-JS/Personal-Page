@@ -1,2 +1,2 @@
-# Portfolio
-Portfolio Page
+# Personal Page
+My personal website, first iteration.
