@@ -139,7 +139,11 @@ footer {
 }
 
 #avatar {
+<<<<<<< HEAD
 	max-width: 20em;
+=======
+	max-width: 16em;
+>>>>>>> 99c91dd2769cfb39ea0311d075eb5eaab1327cc2
 	border-radius: 50%;
 	border: 10px solid slategrey;
 	margin: 1em auto;
@@ -166,7 +170,11 @@ footer {
 
 #About,
 #Contact {
+<<<<<<< HEAD
 	padding: 0 5em;
+=======
+	padding: 0 16em;
+>>>>>>> 99c91dd2769cfb39ea0311d075eb5eaab1327cc2
 }
 
 #About p,
@@ -175,6 +183,107 @@ footer {
 }
 
 
+<<<<<<< HEAD
+=======
+/**********************PORTFOLIO SECTION STYLES**********************/
+
+.portfolio-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolio-item {
+	overflow: hidden;
+	padding: 0 3em;
+	min-width: 25em;
+	margin: 0.8em 0;
+	flex: 50% 0 1;
+	text-align: center;
+}
+
+div.overlay {
+	position: relative;
+	overflow: hidden;
+	margin: 1em auto;
+	width: 100%;
+	background-color: slategrey;
+}
+
+	div.overlay * {
+		transition: all 0.3s ease;
+	}
+
+	div.overlay img {
+		width: 100%;
+		vertical-align: top;
+		transition: all 0.5s ease;
+	}
+
+	div.overlay p {
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		font-size: 1.25em;
+	}
+
+	div.overlay:hover img {
+		opacity: 0.15;
+		filter: grayscale(100%)
+	}
+
+	div.overlay:hover p {
+		transform: translate(-50%, -50%) scale(1);
+		transition: transform 500ms 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+
+.portfolio-text {
+	text-align: center;
+}
+
+
+/***********************SKILLS SECTION STYLES***********************/
+
+#skill-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.skill-item {
+	display: flex;
+	margin: 0.6em;
+	padding: 1em;
+	align-items: center;
+	justify-content: flex-start;
+	flex: 30em 1 1;
+	border-radius: 40px;
+	transition: 0.5s background;
+}
+
+	.skill-item:hover {
+		background:  #dbe4f0;
+	}
+
+.skill-icon {
+	border-radius: 25px;
+	max-width: 13em;
+	padding: 10px;
+}
+
+.css-icon {
+	padding: 0;
+}
+
+.skill-text {
+	font-size: 1.2em;
+	max-width: 21em;
+}
+
+
+>>>>>>> 99c91dd2769cfb39ea0311d075eb5eaab1327cc2
 /***********************CONTACT FORM STYLES***********************/
 
 .contact-form input, 
@@ -241,7 +350,14 @@ footer {
 		margin: 0 auto 0.8em auto;
 	}
 
+<<<<<<< HEAD
 
+=======
+	#Portfolio,
+	#Skills {
+		padding: auto;
+	}
+>>>>>>> 99c91dd2769cfb39ea0311d075eb5eaab1327cc2
 }
 
 /*Mobile*/
