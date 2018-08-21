@@ -139,7 +139,7 @@ footer {
 }
 
 #avatar {
-	max-width: 20em;
+	max-height: 15em;
 	border-radius: 50%;
 	border: 10px solid slategrey;
 	margin: 1em auto;
