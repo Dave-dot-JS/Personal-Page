@@ -1,0 +1,28 @@
+/*************************INTRO PAGE STYLES*************************/
+
+#drum-avatar {
+	float: right;
+	margin: 5em;
+	width: 35%;
+	border-radius: 90%;
+	border: 15px solid slategrey;
+	box-shadow: 0 5px 15px 0;
+}
+
+#blog-home {
+	padding-top: 3.5em;
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+.intro-text {
+	margin-top: 2.5em;
+	padding: 2.5em 2.5em 0 2.5em;
+	text-align: left;
+}
+
+.blog-list {
+	list-style: none;
+	text-align: left;
+	font-size: 1.5em;
+}

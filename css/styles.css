@@ -184,6 +184,7 @@ a:hover {
 	border-radius: 50%;
 	border: 10px solid slategrey;
 	margin: 1em auto;
+	box-shadow: 0 3px 10px 0;
 }
 
 @keyframes nav-appear {
