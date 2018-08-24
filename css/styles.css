@@ -157,7 +157,7 @@ a:hover {
 	background-image: url("images/background.jpg");
 	background-size: cover;
 	margin:0;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 	.nav-head h1 {
