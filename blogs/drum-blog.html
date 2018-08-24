@@ -12,10 +12,10 @@
 <body>
 	<header>
 		<nav class="nav-bar">
-			<a href="#blog-home" class="nav-item" id="nav-title">Dave·JS</a>
+			<a href="../index.html" class="nav-item" id="nav-title">Dave·JS</a>
 			<i class="fa fa-bars" id="dropdown"></i>
 			<ul id="nav-items">
-				<a href="https://dave-dot-js.com/#About"><li class="nav-item nav-section">About</li></a>
+				<a href="#blog-home"><li class="nav-item nav-section">Home</li></a>
 				<div class="dropdown">
 					<li class="nav-item nav-section drop-btn">Blogs</li>
 					<div class="blog-dropdown-items">
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<a href="../Dave_Skrtich(CV).pdf" target="_blank"><li class="nav-item nav-section">Resume</li></a>
-				<a href="https://dave-dot-js.com/#Contact"><li class="nav-item nav-section">Contact</li></a>
+				<a href="#Contact"><li class="nav-item nav-section">Contact</li></a>
 			</ul>
 		</nav>
 		<div class="nav-head" id="blog-home">
@@ -57,6 +57,17 @@
 			</div>
 		</div>
 	</main>
+	<section id="Contact">
+		<h2>Contact Form</h2>
+		<h4>Want to get in touch? Send me a message using the form below!</h4>
+		<div class="form-group">
+			<form class="contact-form" action="https://formspree.io/me@dave-dot-js.com" method="POST">
+				<input type="email" name="email" class="form-control" placeholder="Your email">
+				<textarea name="message" rows="10" class="form-control" placeholder="You message"></textarea>
+				<button type="submit" class="btn" id="submit-btn">Let's Talk!</button>
+			</form>
+		</div>
+	</section>
 	<footer>
 		Coded from scratch by &copy; Dave·JS 2018
 	</footer>
