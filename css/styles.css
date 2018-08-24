@@ -25,6 +25,8 @@ section h2 {
 
 footer {
 	padding: 0.5em;
+	margin-top: 3em;
+	background-color: #ddd;
 }
 
 a:hover {
@@ -171,7 +173,7 @@ a:hover {
 		font-size: 2.25em;
 	}
 
-#Home {
+.nav-appear {
 	animation: nav-appear 1.5s linear;
 }
 

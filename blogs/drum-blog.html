@@ -12,27 +12,57 @@
 <body>
 	<header>
 		<nav class="nav-bar">
-			<a href=".#blog-home" class="nav-item" id="nav-title">Dave·JS</a>
+			<a href="#blog-home" class="nav-item" id="nav-title">Dave·JS</a>
 			<i class="fa fa-bars" id="dropdown"></i>
 			<ul id="nav-items">
 				<a href="../index.html#About"><li class="nav-item nav-section">About</li></a>
-				<a href="blog.html"><li class="nav-item nav-section">Blogs</li></a>
+				<div class="dropdown">
+					<li class="nav-item nav-section drop-btn">Blogs</li>
+					<div class="blog-dropdown-items">
+						<a href="blogs/ml-blog.html">Machine Learning</a>
+						<a href="blogs/drum-blog.html">Drumming</a>
+					</div>
+				</div>
 				<a href="../Dave_Skrtich(CV).pdf" target="_blank"><li class="nav-item nav-section">Resume</li></a>
 				<a href="../index.html#Contact"><li class="nav-item nav-section">Contact</li></a>
 			</ul>
 		</nav>
 		<div class="nav-head" id="blog-home">
-			<img src="../images/dave-drum.jpg" id="drum-avatar" alt="Handsome drummer dood">
+			<div class="right-float">
+				<img src="../images/dave-drum.jpg" class='nav-appear'id="drum-avatar" alt="Handsome drummer dood">
+			</div>
 			<h5 class="intro-text">
-				Welcome to my drumming blog! In summer of 2018, in nan effort to force myself into practicing more, I made a committment to learn one new cover-song per month on drums, and post my progress along the way. This is where all of those posts go! In addition to practice posts, I will also share clips from live shows and from the recording studio with my band <a href="https://sixteenscandals.bandcamp.com/" target="_blank">Sixteen Scandals</a><br />A quick disclaimer: I am not here to teach, I am here to learn. If documenting my own learning can help someone else with their own journey, all the better. But that's not the primary function of this page.  And that being said, constructive criticism is most welcome!  If you have feedback or suggestions for future songs to cover, just hit the Contact button above and shoot me a message!
-			</h5>
-			<p>Blog navigation:</p>
-			<ul class="blog-list">
-				<li class="blog-item"><a href="#2018-08-23">2018-08-23 - Intro and 'I Found Away' Session #1</a></li>
-			</ul>
+				Welcome to my drumming blog! In summer of 2018, in an effort to force myself into practicing more, I made a committment to learn one new cover-song per month on drums, and post my progress along the way. This is where all of those posts go! In addition to practice posts, I will also share clips from live shows and from the recording studio with my band <a href="https://sixteenscandals.bandcamp.com/" target="_blank">Sixteen Scandals</a><br /><br />A quick disclaimer: I am not here to teach, I am here to learn. If documenting my own learning can help someone else on their journey, all the better. But that's not the primary function of this page. And that being said, constructive criticism is most welcome! If you have feedback or suggestions for future songs to cover, just hit the Contact button above and shoot me a message!
+			</h5><br />
+			<div class="blog-nav">
+				<h3>Blog navigation:</h3>
+				<ul class="blog-list">
+					<li class="blog-item"><a href="#2018-08-23">2018-08-23 - Intro and 'I Found Away' Session #1</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
+	<main>
+		<div class="blog-post" id="2018-08-23">
+			<div class="blog-vids right-float">
+				<iframe class='blog-vid' width="450" height="250" src="https://www.youtube.com/embed/iED9gUY2d7Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe class='blog-vid' src="https://player.vimeo.com/video/286441416" width="453" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<div class="blog-text">
+				<h2>Aug 15 - Sept 15:  Alkaline Trio - I Found Away<br />Progress Update #1</h2>
+				<p>This whole idea of making a drum blog came out of seeing Alkaline Trio live and watching their drummer (Jarrod Alexander filling in for Derek Grant) completely rip it up. So it is only appropriate that the first song I open this blog with be one of theirs. The drumming of I Found Away has always intrigued me. Specifically the chorus; it's one of those drum parts that you bang your head against for hours trying to figure out what the hell he's playing. You know it's a double-time hi-hat but the placement of the open note and the sticking pattern are tough to pin down. After finding a take of the <a href="https://www.youtube.com/watch?v=0A01Aaf83fA" target="_blank" alt='youtube video of isolated drum track'>drum track</a> (thanks Derek Grant!) and reviewing a <a href="https://www.youtube.com/watch?v=ZbErJY9XC1E" target="_blank" alt="live video of I Found Away">live video</a>, I think I've nailed it down.</p>
+				<p>This first set of videos comes out of about 1.5 hours of practice (including warm-ups). The first hour was spent learning the parts...which including practicing the chorus wrong for 30 minutes. In that time I was able to get through the first verse and chorus. The last bit of the session, I set up the GoPro and went through as many takes as I could until my arms got stiff. In the end I got one decent take a full-speed and one take at 135 bpm to show the sticking. I split the session into two videos. One with the slow take and the full-speed take with no backing track, and one full-speed take with the backing track.</p>
+				<p>There were a few things I found difficult with this tune so far: first is obviously the speed. This track is stinking fast! And with the entire song being played with 16th notes on the hi-hat it can burn you out quickly. I was actually surprised that the verse is harder to tighten up than the chorus. The chorus, although tricky to figure out, flows pretty easily once you get going. The four-to-the-floor kick can be played pretty much absent-mindedly leaving plenty of mental space to focus on not fucking up the hi-hat part. But in the verse the placement of the kick pedals, specifically at the beginning of the first couple bars, is tough to place cleanly.</p>
+				<p>Anyways, that is it for this week! I have just over 3 weeks left to nail this song down in full. For the next two weeks I'm hoping to get to the end of the song, and then I will spend the last week tightening it up to a click-track for the final share. See you then!</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		Coded from scratch by &copy; Dave·JS 2018
+	</footer>
 
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/app.js"></script>
+
 </body>
 </html>
