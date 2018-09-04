@@ -15,8 +15,9 @@
 	margin-top: 2.5em;
 	padding: 0 2.5em;
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	line-height: 1.5;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .blog-list {
@@ -48,21 +49,6 @@
 .blog-text h2 {
 	padding: 2em 0 1em 0;
 }
-
-/***********************RESPONSIVE STYLES***********************/
-
-/*Tablet*/
-@media screen and (max-width: 768px) {
-	#drum-avatar {
-		display: none;
-	}
-
-	.intro-text {
-		font-size: 1.2em;
-	}
-
-}
-
 
 /***********************CONTACT STYLES***********************/
 
