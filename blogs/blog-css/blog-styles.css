@@ -1,14 +1,10 @@
 /*************************INTRO PAGE STYLES*************************/
-.right-float {
-	float: right;
-	width: 35%;
-}
-
 #drum-avatar {
 	border-radius: 90%;
-	max-width: 80%;
+	max-width: 33%;
 	border: 15px solid slategrey;
 	box-shadow: 0 5px 15px 0;
+	float: right;
 }
 
 .intro-text {
@@ -29,7 +25,7 @@
 .blog-post {
 	overflow: hidden;
 	padding: 0 2.5em;
-	min-height: 100vh;
+	margin: 2em;
 }
 
 	.blog-post p {
