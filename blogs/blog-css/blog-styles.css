@@ -5,6 +5,7 @@
 	border: 15px solid slategrey;
 	box-shadow: 0 5px 15px 0;
 	float: right;
+	margin: 2em;
 }
 
 .nav-head {
@@ -12,18 +13,21 @@
 }
 
 .intro-text {
-	margin-top: 2.5em;
 	padding: 0 2.5em;
 	text-align: left;
 	font-size: 1.3em;
 }
 
-.blog-list {
-	list-style: none;
+.blog-nav {
 	text-align: left;
 	font-size: 1.25em;
-	padding-left: 10%;
 	padding-bottom: 4em;
+	padding-left: 2.5em;
+}
+
+.blog-list {
+	list-style: none;
+	padding: 0.5em 0;
 }
 
 /*************************BLOG POST STYLES*************************/
